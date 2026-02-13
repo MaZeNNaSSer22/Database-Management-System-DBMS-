@@ -86,7 +86,7 @@ do
         4)
             read -p "Enter Database Name to Drop: " dbName
             read -p "Are you sure you want to drop the database '$dbName'? (y/n) : " confirm
-            if [[ -d "$dbName" && "$confirm" == "y" ]]; then
+            if [[ -d ~/Bash_project/data/"$dbName" && "$confirm" == "y" ]]; then
                 rm -r ~/Bash_project/data/"$dbName"
                 echo "Database Dropped Successfully."
             else
