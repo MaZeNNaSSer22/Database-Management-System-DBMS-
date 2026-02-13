@@ -40,7 +40,6 @@ do
             echo "5. Select From Table"
             echo "6. Delete From Table"
             echo "7. Update Table"
-            echo "8. Show table "
             
             select db_action in 1 2 3 4 5 6 7;
             do
@@ -67,6 +66,8 @@ do
                         echo "Inserting into a Table..."
                         source "$SCRIPT_DIR"/insertion.sh;;
                     5)
+                        echo "Available Tables:"
+                        ls -p | grep -v '.meta'
                         echo "Selecting from a Table..."
                         source "$SCRIPT_DIR"/Select.sh;;
 
@@ -76,24 +77,6 @@ do
                     7)
                         echo "Updating a Table..."
                         source "$SCRIPT_DIR"/update.sh;;
-                    8)
-                        echo "Available Tables:"
-                        ls -p | grep -v '.meta'
-
-                        read -p "Enter Table Name to Show: " tbName
-                        echo "Showing the "$tbName" Table..."
-
-                        if [[ -f "$tbName" ]]; then
-                            # we can use cat command but it will not display the data in a tabular format.
-                            # cat ~/Bash_project/data/"$DB_name"/"$tbName"
-                            
-                            # so we can use column command to display the data in a tabular format.
-                            # -t is used to consider the following argument as a table .
-                            # -s is used to specify the seperator which is : in our case. 
-                            column -t -s ':' "$tbName"
-                        else
-                            echo "Table '$tbName' does not exist."
-                        fi;;
                         
                     *)
                         echo "Invalid option. Please select a number between 1 and 7.";;
