@@ -64,7 +64,7 @@ The system follows a flat-file database model where the file system structure mi
 ### Step 1: Clone the Repository
 
 ```bash
-git clone [https://github.com/YourUsername/BashDBMS.git](https://github.com/YourUsername/BashDBMS.git)
+git clone https://github.com/MaZeNNaSSer22/Database-Management-System-DBMS-.git
 cd BashDBMS
 
 ### Step 2: Grant Execution Permissions
