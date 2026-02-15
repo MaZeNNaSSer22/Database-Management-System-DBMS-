@@ -15,6 +15,7 @@ echo "1. Create Database"
 echo "2. List Databases"
 echo "3. Connect To Database"
 echo "4. Drop Database"
+echo "5. Exit"
 
 # Use a select loop to handle user input for the main menu.
 select action in 1 2 3 4;
@@ -93,8 +94,11 @@ do
                 echo "Database Not Found or Operation Cancelled."
             fi
             ;;
+        5)
+            echo "Exiting the DBMS. Goodbye!"
+            exit 0;;
         *)
-            echo "Invalid option. Please select 1, 2, 3, or 4.";;
+            echo "Invalid option. Please select 1, 2, 3, 4, or 5.";;
 esac
 
 done
