@@ -57,7 +57,7 @@ The system follows a flat-file database model where the file system structure mi
 
 ## To try this DBMS instantly without downloading any files, run:
 
----> docker run -it mazennasser/bash-database:v1.0
+---> docker run -it mazennasser/bash-database:v1.1
 
 ### OR take clone of the repository on your local machine and run it
 
