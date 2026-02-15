@@ -41,8 +41,9 @@ do
             echo "5. Select From Table"
             echo "6. Delete From Table"
             echo "7. Update Table"
+            echo "8. Back to Main Menu"
             
-            select db_action in 1 2 3 4 5 6 7;
+            select db_action in 1 2 3 4 5 6 7 8;
             do
                 case $db_action in
                     1)
@@ -78,6 +79,9 @@ do
                     7)
                         echo "Updating a Table..."
                         source "$SCRIPT_DIR"/update.sh;;
+                    8)
+                        echo "Returning to Main Menu..."
+                        break;;
                         
                     *)
                         echo "Invalid option. Please select a number between 1 and 7.";;
