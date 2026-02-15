@@ -18,7 +18,7 @@ echo "4. Drop Database"
 echo "5. Exit"
 
 # Use a select loop to handle user input for the main menu.
-select action in 1 2 3 4;
+select action in 1 2 3 4 5;
 do
     case $action in
         1)
