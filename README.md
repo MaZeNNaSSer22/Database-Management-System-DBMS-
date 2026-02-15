@@ -53,6 +53,14 @@ The system follows a flat-file database model where the file system structure mi
 
 ## 🚀 Follow these steps to set up and run the project on your local machine.
 
+### Quick Start with Docker
+
+## To try this DBMS instantly without downloading any files, run:
+
+---> docker run -it mazennasser/bash-database:v1.0
+
+### OR take clone of the repository on your local machine and run it
+
 ### Step 1: Clone the Repository
 
 ```bash
